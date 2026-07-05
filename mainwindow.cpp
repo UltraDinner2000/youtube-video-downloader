@@ -16,7 +16,7 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-void MainWindow::downloadVideo(QString url) {
-    downloader v(url);
+void MainWindow::downloadVideo(QString url, QString path, QString format) {
+    downloader v(url, path, format);
     v.downloadVideo();
 }

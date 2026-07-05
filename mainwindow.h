@@ -16,7 +16,7 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
-    void downloadVideo(QString url);
+    void downloadVideo(QString url, QString path, QString format);
 
 private:
     Ui::MainWindow *ui;
